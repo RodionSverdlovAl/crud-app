@@ -1,5 +1,5 @@
 <?php
-require_once 'connect.php';
+require_once 'config/connect.php';
 ?>
 
 <!doctype html>
@@ -9,6 +9,10 @@ require_once 'connect.php';
     <title>Products</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
     th,td{
         padding:10px;
         border: 2px solid black;
@@ -40,8 +44,18 @@ require_once 'connect.php';
             <?php
         }
         ?>
-
     </table>
+
+    <form action="vendor/create.php", method="post">
+        <p>Заголовок</p>
+        <input type="text" name="title">
+        <p>Описание</p>
+        <textarea  name="description"></textarea>
+        <p>Цена</p>
+        <input type="number" name="price"><br>
+        <button type="submit">Добавить</button>
+
+    </form>
 
 </body>
 </html>
