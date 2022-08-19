@@ -41,6 +41,9 @@ require_once 'config/connect.php';
                     <td><?= $product[3]?></td>
                     <td><?= $product[2]?></td>
                     <td><a href="update.php?id=<?= $product[0]?>">изменить</a></td>
+                    <td style="background: darkred; color: white">
+                        <a style="text-decoration: none; color: white" href="vendor/delete.php?id=<?= $product[0]?>">удалить</a>
+                    </td>
                 </tr>
             <?php
         }
