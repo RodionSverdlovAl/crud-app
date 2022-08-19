@@ -40,6 +40,7 @@ require_once 'config/connect.php';
                     <td><?= $product[1]?></td>
                     <td><?= $product[3]?></td>
                     <td><?= $product[2]?></td>
+                    <td><a href="update.php?id=<?= $product[0]?>">изменить</a></td>
                 </tr>
             <?php
         }
@@ -54,7 +55,6 @@ require_once 'config/connect.php';
         <p>Цена</p>
         <input type="number" name="price"><br>
         <button type="submit">Добавить</button>
-
     </form>
 
 </body>
