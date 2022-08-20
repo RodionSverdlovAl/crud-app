@@ -20,6 +20,9 @@ require_once 'config/connect.php';
     th{
         background: #7cbf8f;
     }
+    td{
+        max-width: 600px;
+    }
 </style>
 <body>
     <table>
@@ -44,6 +47,7 @@ require_once 'config/connect.php';
                     <td style="background: darkred; color: white">
                         <a style="text-decoration: none; color: white" href="vendor/delete.php?id=<?= $product[0]?>">удалить</a>
                     </td>
+                    <td><a href="product.php?id=<?=$product[0]?>">посмотреть</a></td>
                 </tr>
             <?php
         }
